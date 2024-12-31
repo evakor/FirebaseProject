@@ -7,7 +7,7 @@ Email and Password Authentication: Users can register and sign in using their em
 Google Sign-In: Users have the option to sign in with their Google accounts for a quick and seamless authentication experience.
 Responsive Web Design: Ensures that the web application is accessible and functional on devices of all sizes.
 
-**Technologies Used** /n
+**Technologies Used** 
 Firebase Authentication: Utilizes Firebase's authentication module to manage user sign-in and registration.
 HTML/CSS: Basic HTML5 and CSS for structuring and styling the web application.
 JavaScript: Used for the client-side logic of the authentication process.
