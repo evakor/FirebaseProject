@@ -2,30 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Sign Up page</title>
-    <script type="module" src="signIn.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <script type="module" src="signInEmail.js" defer></script>
+    <script type="module" src="signUpGoogle.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        h3 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        button, .go, .fb {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            margin-top: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        button {
+            background: #0056b3;
+        }
+        .go {
+            background: #db4437; /* Google color */
+        }
+        .fb {
+            background: #4267B2; /* Facebook color */
+        }
+        button:hover, .go:hover, .fb:hover {
+            opacity: 0.9;
+        }
+        .form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <form>
-        <h3>Sign In to your Account</h3>
-
-        <label for="username">Username</label>
-        <input type="email" placeholder="Email or Phone" id="email" required>
-
+        <h3>Sign In to Your Account</h3>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter your email" id="email" required>
         <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password" required>
-
-        <button id="submit" type="submit">Create Account</button>
-        <div class="social">
-            <div class="go" id="google">Google</div>
-            <div class="fb" id="google">Facebook</div>
-        </div>
-
+        <input type="password" placeholder="Enter your password" id="password" required>
+        <button id="submit" type="submit">Sign In</button>
+        <button type="button" class="go" id="google">Sign in with Google</button>
         <div class="form">
             <p>Don't have an account?
                 <span>
-                    <a href="register.html">Login Here</a>
+                    <a href="register.html"><u>Sign Up Here</u></a>
                 </span>
             </p>
         </div>
