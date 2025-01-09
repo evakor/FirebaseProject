@@ -34,7 +34,8 @@ googleLogin.addEventListener("click", function(){
         // The signed-in user info.
         const user = result.user;
         console.log(user);
-        window.location.href = "message.html";
+        console.log('User is signed in');
+        window.location.href = "loggedIn.html";
         
       })
       .catch((error) => {

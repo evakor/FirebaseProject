@@ -31,7 +31,7 @@ submit.addEventListener("click", function (event) {
   const auth = getAuth();
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      // Signed up
+      // Signed up 
       const user = userCredential.user;
       alert("Connecting with your account");
       window.location.href = "message.html";
