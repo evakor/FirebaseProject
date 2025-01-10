@@ -3,78 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <title>Sign In Page</title>
     <script type="module" src="signInEmail.js" defer></script>
     <script type="module" src="signUpGoogle.js" defer></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        form {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-        }
-        h3 {
-            text-align: center;
-            color: #333;
-        }
-        label {
-            display: block;
-            margin-top: 15px;
-        }
-        input[type="email"], input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-            box-sizing: border-box;
-        }
-        button, .go, .fb {
-            width: 100%;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            color: white;
-            margin-top: 10px;
-            cursor: pointer;
-            text-align: center;
-        }
-        button {
-            background: #0056b3;
-        }
-        .go {
-            background: #db4437; /* Google color */
-        }
-        .fb {
-            background: #4267B2; /* Facebook color */
-        }
-        button:hover, .go:hover, .fb:hover {
-            opacity: 0.9;
-        }
-        .form {
-            text-align: center;
-            margin-top: 20px;
-        }
-        a {
-            color: #0056b3;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="login-signup.css" />
 </head>
 <body>
     <form>
@@ -88,7 +21,7 @@
         <div class="form">
             <p>Don't have an account?
                 <span>
-                    <a href="register.html"><u>Sign Up Here</u></a>
+                    <a href="register.html" style="color: #ffffff;"><i>Sign Up Here</i></a>
                 </span>
             </p>
         </div>

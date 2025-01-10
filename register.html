@@ -3,71 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <title>Sign Up page</title>
     <script type="module" src="signUpEmail.js" defer></script>
     <script type="module" src="signUpGoogle.js" defer></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        form {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            width: 300px;
-        }
-        h3 {
-            text-align: center;
-            color: #333;
-        }
-        label {
-            display: block;
-            margin: 15px 0 5px;
-        }
-        input[type="email"], input[type="password"], button, .go {
-            width: 100%;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-            box-sizing: border-box;
-        }
-        button, .go {
-            background: #0056b3;
-            color: white;
-            border: none;
-            margin-top: 10px;
-            cursor: pointer;
-        }
-        button:hover, .go:hover {
-            background: #004494;
-        }
-        .social {
-            margin-top: 10px;
-        }
-        .fb {
-            background: #4267B2;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        .form {
-            text-align: center;
-            margin-top: 20px;
-        }
-        a {
-            color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="login-signup.css" />
 </head>
 <body>
     <form>
@@ -81,14 +21,13 @@
 
         <button id="submit" type="submit">Create Account</button>
         <div class="social">
-            <button type="button" class="go" id="google">Sign in with Google</button>
-            
+            <button type="button" class="go" id="google">Sign up with Google</button>
         </div>
 
         <div class="form">
             <p>Already have an account?
                 <span>
-                    <a href="signIn.html">Login Here</a>
+                    <a href="signIn.html" style="color: #ffffff;"><i>Login Here</i></a>
                 </span>
             </p>
         </div>

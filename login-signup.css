@@ -1,0 +1,78 @@
+body {
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+form {
+    background: rgba(24, 24, 24, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+h3 {
+    text-align: center;
+    color: #ffffff;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input[type="email"], input[type="password"] {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button, .go, .fb {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+button {
+    background: #0056b3;
+}
+.go {
+    background: #db4437; /* Google color */
+}
+.fb {
+    background: #4267B2; /* Facebook color */
+}
+button:hover, .go:hover, .fb:hover {
+    opacity: 0.9;
+}
+.form {
+    text-align: center;
+    margin-top: 20px;
+}
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
