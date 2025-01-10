@@ -9,6 +9,7 @@
     background-position: center;
     background-size: cover;
     height: 100vh;
+    font-family: 'Poppins';
 }
 
 .navbar{
@@ -26,7 +27,6 @@
 .logo{
     color: #ff7200;
     font-size: 35px;
-    font-family: Arial;
     padding-left: 20px;
     float: left;
     padding-top: 10px;
@@ -56,7 +56,6 @@ ul li{
 ul li a{
     text-decoration: none;
     color: #fff;
-    font-family: Arial;
     font-weight: bold;
     transition: 0.4s ease-in-out;
 }
@@ -72,7 +71,6 @@ ul li a:hover{
 }
 
 .srch{
-    font-family: 'Times New Roman';
     width: 200px;
     height: 40px;
     background: transparent;
@@ -123,13 +121,11 @@ ul li a:hover{
 .content .par{
     padding-left: 20px;
     padding-bottom: 25px;
-    font-family: Arial;
     letter-spacing: 1.2px;
     line-height: 30px;
 }
 
 .content h1{
-    font-family: 'Times New Roman';
     font-size: 50px;
     padding-left: 20px;
     margin-top: 9%;
@@ -138,11 +134,13 @@ ul li a:hover{
 
 .content .cn{
     width: 160px;
-    height: 40px;
+    height: 55px;
     background: #ff7200;
     border: none;
     margin-bottom: 10px;
     margin-left: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
@@ -167,7 +165,7 @@ ul li a:hover{
 
 .form{
     width: 250px;
-    height: 380px;
+    height: 405px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     position: absolute;
     top: -20px;
@@ -179,7 +177,6 @@ ul li a:hover{
 
 .form h2{
     width: 220px;
-    font-family: sans-serif;
     text-align: center;
     color: #ff7200;
     font-size: 22px;
@@ -201,7 +198,6 @@ ul li a:hover{
     font-size: 15px;
     letter-spacing: 1px;
     margin-top: 30px;
-    font-family: sans-serif;
 }
 
 .form input:focus{
@@ -210,7 +206,6 @@ ul li a:hover{
 
 ::placeholder{
     color: #fff;
-    font-family: Arial;
 }
 
 .btnn{
@@ -235,7 +230,6 @@ ul li a:hover{
     font-weight: bold;
 }
 .form .link{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     padding-top: 20px;
     text-align: center;
@@ -246,20 +240,53 @@ ul li a:hover{
 }
 .liw{
     padding-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 0;
     text-align: center;
 }
-.icons a{
-    text-decoration: none;
-    color: #fff;
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
-.icons ion-icon{
-    color: #fff;
-    font-size: 30px;
-    padding-left: 14px;
-    padding-top: 5px;
-    transition: 0.3s ease;
+
+.go {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
 }
-.icons ion-icon:hover{
-    color: #ff7200;
+
+.user-icon {
+    position: absolute;
+    right: 30%;
+    top: 20px;
+}
+
+.logout-popup {
+    display:none; 
+    position: fixed; 
+    right: 30%; 
+    top: 75px; 
+    background: white; 
+    border: 1px solid black; 
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.logout-popup button {
+    background: #ff7200; 
+    color: white; 
+    border: none; 
+    padding: 8px 12px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 14px;
 }

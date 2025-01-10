@@ -16,7 +16,7 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="#">LOGIN</a></li>
                 </ul>
             </div>
@@ -30,10 +30,10 @@
         </div>
 
         <!-- Popup for logout confirmation -->
-        <div id="logoutPopup" style="display:none; position: fixed; right: 20px; top: 75px; background: white; border: 1px solid black; padding: 10px;">
+        <div id="logoutPopup" class="logout-popup">
             <p>Are you sure you want to log out?</p>
             <button id="logout">Log out</button>
-            <button onclick="hidePopup()">x</button>
+            <button onclick="hidePopup()" style="background: none; border: none; color: #888; font-size: 18px; cursor: pointer;">x</button>
 
         </div>
 
