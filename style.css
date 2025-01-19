@@ -264,21 +264,21 @@ ul li a:hover{
 }
 
 .user-icon {
-    position: absolute;
-    right: 30%;
+    position: fixed;
+    right: 3%;
     top: 20px;
 }
 
 .logout-popup {
-    display:none; 
+    display: none; 
     position: fixed; 
-    right: 30%; 
+    right: 3%; 
     top: 75px; 
     background: white; 
     border: 1px solid black; 
     padding: 10px;
     border-radius: 10px;
-    border: none;
+    text-align: center;
 }
 
 .logout-popup button {

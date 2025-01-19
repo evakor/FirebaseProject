@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Firebase Project</title>
     <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <!-- <script type="module" src="signInEmail.js" defer></script> -->
     <script type="module" src="signOut.js" defer></script>
     <script type="module" src="redirection.js" defer></script>
@@ -32,11 +33,14 @@
 
         <!-- Popup for logout confirmation -->
         <div id="logoutPopup" class="logout-popup">
-            <p>Are you sure you want to log out?</p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <p style="margin: 0;">Are you sure you want to log out?</p>
+                <button onclick="hidePopup()" style="background: none; border: none; color: #888; font-size: 18px; cursor: pointer;">x</button>
+            </div>
+            <br>
             <button id="logout">Log out</button>
-            <button onclick="hidePopup()" style="background: none; border: none; color: #888; font-size: 18px; cursor: pointer;">x</button>
-
         </div>
+        
 
         <div class="content">
             <h1>Firebase <br /><span>Authentication</span> <br />Project</h1>
